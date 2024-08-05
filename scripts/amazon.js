@@ -85,7 +85,7 @@ function addedMessage(productId){
         document.querySelector(`.js-added-to-cart-${productId}`).classList.remove('added-to-cart-show');
     }, 1000);
 
-    addedMessageTimeouts[productId] = timeId;
+    addedMessageTimeouts[productId] = previousTimeoutId;
 }
 
 document.querySelectorAll('.js-add-to-cart').forEach((button)=>{
