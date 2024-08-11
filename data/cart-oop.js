@@ -82,7 +82,7 @@ function Cart(localStorageKey) {
     return cart;
 }
 
-// can create multiple objects
+// can create multiple objects, we use function to generate multiple objects
 const cart = Cart('cart-oop');
 const businessCart = Cart('cart-business');
 
